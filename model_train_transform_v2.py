@@ -22,7 +22,6 @@ import torch.nn.functional as F
 
 torch.manual_seed(0)
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-import matplotlib.pyplot as plt
 
 ########################
 def get_param_i(param, i):
@@ -80,11 +79,6 @@ def check_random_transform(self,image,mask,transform):
     mask_cpu = mask.cpu()
     numpy_image= image_cpu.detach().numpy()
     numpy_mask = mask_cpu.detach().numpy()
-
-    
-    plt.imsave(image_and_mask_path+'_new_image.png',numpy_image.squeeze(0),cmap='gray')
-    plt.imsave(image_and_mask_path+'_new_mask.png',numpy_mask,cmap='gray')
-
 
 transform = v2.Compose([
     v2.RandomHorizontalFlip(),
