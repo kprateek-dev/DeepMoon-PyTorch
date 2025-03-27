@@ -1,3 +1,6 @@
+## Original Code
+This repository is a fork of the original code by the authors of the paper  and can be found at (https://github.com/silburt/DeepMoon). The same can be found at (https://github.com/Akshat6133/DeepMoon_PyTorch).The original code is licensed under the MIT License. We have only converted the code from keras-tensorflow to pytorch-torchvision, the architecture and structure remains the same as that of the original paper.
+
 # DeepMoon - Lunar Crater Counting Through Deep Learning
 Center for Planetary Sciences / Department of Astronomy & Astrophysics / Canadian Institute for Theoretical Astrophysics
 University of Toronto
