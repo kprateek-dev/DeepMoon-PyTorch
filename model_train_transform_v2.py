@@ -15,7 +15,7 @@ from torchvision.transforms import v2
 from torchvision import datapoints
 
 import utils.template_match_target as tmt
-import utils.processing as proc
+import utils.processing_torch as proc
 
 
 import torch.nn.functional as F
